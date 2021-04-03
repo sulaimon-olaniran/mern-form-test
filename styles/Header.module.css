@@ -1,0 +1,141 @@
+.navContainer{
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-family: 'Red Hat Display';
+ 
+}
+
+
+.linksContent{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.linkDiv{
+    min-width: 30%;
+    height: 100%;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.headerProfile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+.avatarImage{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.profileInformation{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInformation p{
+    margin: 0;
+}
+
+.authButtonContainer{
+    min-width: 100px;
+    height: 2rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.authButtonContainer:hover{
+    background-color: #151371 ;
+}
+
+.authButtonContainer:hover .authButton{
+    color: white;
+}
+
+.authButton{
+    color: rgb(106, 106, 106);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+.colorsDiv{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.purpleDiv{
+    background-color:#151371;
+    width: 33%;
+}
+
+
+.pinkDiv{
+    background-color: #FF00B8;
+    width: 33%;
+}
+
+.yellowDiv{
+    background-color: #FFC700;
+    width: 33%;
+}
+
+.logoImage{
+    width: 100px;
+    height: 100px;
+}
+
+.logoImage:hover{
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .logoImage{
+        width: 70px;
+        height: 70px;
+    }
+
+    .avatarImage{
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .linkDiv{
+        min-width: 30%;
+        height: 100%;
+        margin-right: 15px;
+    }
+}
