@@ -5,6 +5,8 @@ import { connectToDatabase } from '../util/mongodb'
 import homeStyles from '../styles/Home.module.css'
 
 
+const loadingImg = "https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif"
+
 
 import Header from '../components/Header';
 import SignedOutComponent from '../components/SignedOut';
@@ -14,9 +16,10 @@ import SignedInComponent from '../components/SignedIn';
 export default function Home({ isConnected }) {
 
   const [session, loading] = useSession();
+  
 
   
-  if(loading) return <h1>Loading.......</h1>
+  if(loading) return <div className={homeStyles.loadingDiv}><img src={loadingImg} alt="Loading...." /></div>
   return (
     <div className={homeStyles.container}>
       <Head>

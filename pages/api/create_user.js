@@ -11,9 +11,5 @@ export default async (req, res) => {
       .insertOne(req.body)
 
 
-    //   .find({})
-    //   .sort({ metacritic: -1 })
-    //   .limit(20)
-    //   .toArray();
     res.json("User Successfully Created");
   };
