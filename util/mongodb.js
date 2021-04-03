@@ -1,8 +1,8 @@
 import { MongoClient } from 'mongodb'
 
-const {  MONGODB_DB } = process.env
+const { MONGODB_URI, MONGODB_DB } = process.env
 
-const MONGODB_URI="mongodb+srv://sulaimon:oladipupo95@cluster0.vmfp8.mongodb.net/mern_form?retryWrites=true&w=majority"
+
 
 if (!MONGODB_URI) {
   throw new Error(
