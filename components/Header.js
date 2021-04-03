@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useSession, signIn, signOut } from 'next-auth/client'
+import { useSession, signOut } from 'next-auth/client'
 import Meta from './Meta'
 
 

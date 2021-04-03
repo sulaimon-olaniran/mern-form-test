@@ -5,7 +5,6 @@ import  Head  from "next/Head"
 
 
 
-
 const Meta = () =>{
     return(
         <Head>
