@@ -22,14 +22,14 @@ const SignedOutComponent = () => {
         <div className={signedOutStyles.container}>
             <h1 className={signedOutStyles.welcomeHeader}>Welcome to - <span className={signedOutStyles.welcomeHeaderSpan}>Minority Programmers Association</span></h1>
             <div className={signedOutStyles.linkButtonContainer} >
-                <Link  href="/signin" >
+               
                     <button
                         className={signedOutStyles.linkButton}
-                        //onClick={handleUserSignIn}
+                        onClick={handleUserSignIn}
                     >
                         Start Your Journey
                 </button>
-                </Link>
+               
             </div>
         </div>
     )
