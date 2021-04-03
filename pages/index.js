@@ -1,4 +1,4 @@
-//import Head from 'next/head'
+import Head from 'next/head'
 import { useSession } from 'next-auth/client'
 import { connectToDatabase } from '../util/mongodb'
 
@@ -19,6 +19,16 @@ export default function Home({ isConnected }) {
   if(loading) return <h1>Loading.......</h1>
   return (
     <div className={homeStyles.container}>
+      <Head>
+            <meta
+                name='viewport'
+                content='width=device-width, initial-scale=1'
+            />
+
+            <meta charSet='utf-8' />
+            <title>Mern Form Test</title>
+
+        </Head>
       <Header />
       {session === null ? <SignedOutComponent /> : <SignedInComponent />}
     </div>
